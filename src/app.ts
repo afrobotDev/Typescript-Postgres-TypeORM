@@ -32,7 +32,7 @@ Routes.forEach((route) => {
           return res.status(400).json({ errors: errors.array() });
         }
 
-        const result = await new (route.controller as any)[route.action](
+        const result = await new (route.controller as any)()[route.action](
           req,
           res,
           next,
