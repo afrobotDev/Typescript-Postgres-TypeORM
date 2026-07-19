@@ -114,7 +114,6 @@ curl http://localhost:3000/users
 │   │   └── UserController.ts  # User CRUD handlers
 │   ├── entity/
 │   │   └── User.ts            # User entity definition
-│   ├── middleware/             # Custom middleware (empty)
 │   ├── routes/
 │   │   └── routes.ts          # Route definitions & validation
 │   ├── app.ts                 # Express app setup & middleware
