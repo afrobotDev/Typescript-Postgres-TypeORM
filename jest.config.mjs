@@ -1,10 +1,9 @@
 /** @type {import('jest').Config} */
 const config = {
-  extensionsToTreatAsEsm: [".ts"],
   testEnvironment: "node",
   testMatch: ["**/__tests__/**/*.ts", "**/*.test.ts"],
   transform: {
-    "^.+\\.ts$": ["tsx", { tsconfig: "tsconfig.json" }],
+    "^.+\\.ts$": "<rootDir>/jest-transform.cjs",
   },
   moduleNameMapper: {
     "^(\\.{1,2}/.*)\\.js$": "$1",
