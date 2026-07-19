@@ -1,4 +1,5 @@
 {
+  "exclude": ["__tests__", "jest-transform.cjs"],
   "compilerOptions": {
     // File Layout
     "rootDir": "./src",
